@@ -44,6 +44,13 @@ declare interface DatepickerOptions
     maxMinutes?: number;
     hoursStep?: number;
     minutesStep?: number;
+
+    onSelect?: (handler: (formattedDate: string, date: Date, inst: DatepickerInstance) => void)=> void;
+    onChangeMonth?: ( handler: (month: number, year: number) => void)=> void;
+    onChangeYear?: ( handler: (year: number) => void)=> void;
+    onChangeDecade?: ( handler: (decade: number[]) => void)=> void;
+    onChangeView?: ( handler: (view: "days" | "months" | "years") => void)=> void;
+    onRenderCell?: ( handler: (date: Date, cellType: "day" | "month" | "year") => void)=> void;
 }
 
 declare interface DatepickerEventObject extends JQueryEventObject 
@@ -63,13 +70,6 @@ declare interface DatepickerInstance
     clear(): DatepickerInstance
     update(field: string): DatepickerInstance
     update(options: DatepickerOptions): DatepickerInstance;
-
-    on(event: "onSelect", handler: (formattedDate: string, date: Date, inst: DatepickerInstance) => void): void
-    on(event: "onChangeMonth", handler: (month: number, year: number) => void): void;
-    on(event: "onChangeYear", handler: (year: number) => void): void;
-    on(event: "onChangeDecade", handler: (decade: number[]) => void): void;
-    on(event: "onChangeView", handler: (view: "days" | "months" | "years") => void): void;
-    on(event: "onRenderCell", handler: (date: Date, cellType: "day" | "month" | "year") => void): void;
 }
 
 declare interface DatepickerStatic

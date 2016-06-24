@@ -1,6 +1,6 @@
 {
   "name": "@types/air-datepicker.d.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Typescript/Typings definition for air-datepicker.",
   "main": "air-datepicker.d.ts",
   "typings": "air-datepicker.d.ts",
