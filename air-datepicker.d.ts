@@ -45,12 +45,12 @@ declare interface DatepickerOptions
     hoursStep?: number;
     minutesStep?: number;
 
-    onSelect?: (handler: (formattedDate: string, date: Date, inst: DatepickerInstance) => void)=> void;
-    onChangeMonth?: ( handler: (month: number, year: number) => void)=> void;
-    onChangeYear?: ( handler: (year: number) => void)=> void;
-    onChangeDecade?: ( handler: (decade: number[]) => void)=> void;
-    onChangeView?: ( handler: (view: "days" | "months" | "years") => void)=> void;
-    onRenderCell?: ( handler: (date: Date, cellType: "day" | "month" | "year") => void)=> void;
+    onSelect?: (formattedDate: string, date: Date, inst: DatepickerInstance) => void;
+    onChangeMonth?: ( month: number, year: number) => void;
+    onChangeYear?: ( year: number) => void;
+    onChangeDecade?: ( decade: number[]) => void;
+    onChangeView?: ( view: "days" | "months" | "years") => void;
+    onRenderCell?: ( date: Date, cellType: "day" | "month" | "year") => void;
 }
 
 declare interface DatepickerEventObject extends JQueryEventObject 
