@@ -7,5 +7,5 @@ Modified the datepicker plugin name to avoid conflicts with jquery ui's datepick
 ### Installation
 
 ```bash
-npm install github:nozzlegear/air-datepicker.d.ts#COMMIT --save-dev
+npm install github:nicovil/air-datepicker.d.ts#COMMIT --save-dev
 ```
