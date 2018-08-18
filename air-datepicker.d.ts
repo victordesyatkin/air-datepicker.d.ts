@@ -81,7 +81,7 @@ declare interface AirDatepickerStatic
 declare interface JQuery
 {
     airDatepicker: AirDatepickerStatic;
-    data(type: "datepicker"): DatepickerInstance; 
+    data(type: "airDatepicker"): AirDatepickerInstance; 
 }
 
 declare interface JQueryEventObject
@@ -91,5 +91,5 @@ declare interface JQueryEventObject
 
 declare interface JQuery
 {
-    datepicker: AirDatepickerStatic;
+    airDatepicker: AirDatepickerStatic;
 }
