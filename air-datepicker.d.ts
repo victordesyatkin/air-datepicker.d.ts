@@ -49,7 +49,7 @@ declare interface AirDatepickerOptions
     onChangeMonth?: ( month: number, year: number) => void;
     onChangeYear?: ( year: number) => void;
     onChangeDecade?: ( decade: number[]) => void;
-    onChangeView?: ( view: "days" | "months" | "years") => void;
+    onChangeView?: (view: "days" | "months" | "years", , inst: AirDatepickerInstance) => void;
     onRenderCell?: ( date: Date, cellType: "day" | "month" | "year") => void;
 }
 
@@ -61,6 +61,7 @@ declare interface AirDatepickerEventObject extends JQueryEventObject
 
 declare interface AirDatepickerInstance
 {
+    currentDate: Date;
     show(): AirDatepickerInstance;
     hide(): AirDatepickerInstance;
     next(): AirDatepickerInstance;
@@ -70,6 +71,7 @@ declare interface AirDatepickerInstance
     clear(): AirDatepickerInstance
     update(field: string): AirDatepickerInstance
     update(options: AirDatepickerOptions): AirDatepickerInstance;
+    formatDate(format: string, date: Date): string;
 }
 
 declare interface AirDatepickerStatic
