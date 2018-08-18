@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nozzlegear/air-datepicker.d.ts.git"
+    "url": "git+https://github.com/nicovil/air-datepicker.d.ts.git"
   },
   "author": "Joshua Harms <joshua@nozzlegear.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nozzlegear/air-datepicker.d.ts/issues"
+    "url": "https://github.com/nicovil/air-datepicker.d.ts/issues"
   },
-  "homepage": "https://github.com/nozzlegear/air-datepicker.d.ts#readme"
+  "homepage": "https://github.com/nicovil/air-datepicker.d.ts#readme"
 }

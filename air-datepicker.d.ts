@@ -45,7 +45,7 @@ declare interface AirDatepickerOptions
     hoursStep?: number;
     minutesStep?: number;
 
-    onSelect?: (formattedDate: string, date: Date, inst: DatepickerInstance) => void;
+    onSelect?: (formattedDate: string, date: Date, inst: AirDatepickerInstance) => void;
     onChangeMonth?: ( month: number, year: number) => void;
     onChangeYear?: ( year: number) => void;
     onChangeDecade?: ( decade: number[]) => void;
