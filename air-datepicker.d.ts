@@ -49,7 +49,7 @@ declare interface AirDatepickerOptions
     onChangeMonth?: ( month: number, year: number) => void;
     onChangeYear?: ( year: number) => void;
     onChangeDecade?: ( decade: number[]) => void;
-    onChangeView?: (view: "days" | "months" | "years", , inst: AirDatepickerInstance) => void;
+    onChangeView?: (view: "days" | "months" | "years", inst: AirDatepickerInstance) => void;
     onRenderCell?: ( date: Date, cellType: "day" | "month" | "year") => void;
 }
 
