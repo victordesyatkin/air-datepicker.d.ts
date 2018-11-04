@@ -72,6 +72,7 @@ declare interface AirDatepickerInstance
     update(field: string): AirDatepickerInstance
     update(options: AirDatepickerOptions): AirDatepickerInstance;
     formatDate(format: string, date: Date): string;
+	destroy(): void;
 }
 
 declare interface AirDatepickerStatic
