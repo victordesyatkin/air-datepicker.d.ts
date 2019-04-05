@@ -1,4 +1,4 @@
-declare interface AirDatepickerOptions 
+declare interface AirDatepickerOptions
 {
     classes?: string;
     inline?: boolean;
@@ -53,7 +53,7 @@ declare interface AirDatepickerOptions
     onRenderCell?: ( date: Date, cellType: "day" | "month" | "year") => void;
 }
 
-declare interface AirDatepickerEventObject extends JQueryEventObject 
+declare interface AirDatepickerEventObject extends JQueryEventObject
 {
     date: Date;
     format(format?: string): string;
@@ -86,7 +86,7 @@ declare interface AirDatepickerInstance
     update(field: string): AirDatepickerInstance
     update(options: AirDatepickerOptions): AirDatepickerInstance;
     formatDate(format: string, date: Date): string;
-	destroy(): void;
+    destroy(): void;
 }
 
 declare interface AirDatepickerStatic
@@ -98,7 +98,7 @@ declare interface AirDatepickerStatic
 declare interface JQuery
 {
     datepicker: AirDatepickerStatic;
-    data(type: "datepicker"): AirDatepickerInstance; 
+    data(type: "datepicker"): AirDatepickerInstance;
 }
 
 declare interface JQueryEventObject
