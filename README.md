@@ -1,11 +1,13 @@
-# air-datepicker.d.ts
+| :warning: **Forked variant.** |
+|--------------|
+| This forked version adds the `AirDatepickerLanguageInstance` and fixes some naming issues. |
 
-An NPM-installable Typescript declaration for [https://www.npmjs.com/package/air-datepicker](air-datepicker).
+# `air-datepicker.d.ts`
 
-Modified the datepicker plugin name to avoid conflicts with jquery ui's datepicker
+An npm-installable TypeScript declaration for [air-datepicker](https://www.npmjs.com/package/air-datepicker).
 
 ### Installation
 
 ```bash
-npm install github:nicovil/air-datepicker.d.ts#COMMIT --save-dev
+npm install --save-dev git+https://git@github.com/blu3r4y/air-datepicker.d.ts.git
 ```

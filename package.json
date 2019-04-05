@@ -1,6 +1,6 @@
 {
   "name": "@types/air-datepicker",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Typescript/Typings definition for air-datepicker.",
   "main": "air-datepicker.d.ts",
   "typings": "air-datepicker.d.ts",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicovil/air-datepicker.d.ts.git"
+    "url": "git+https://github.com/blu3r4y/air-datepicker.d.ts.git"
   },
   "author": "Joshua Harms <joshua@nozzlegear.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicovil/air-datepicker.d.ts/issues"
+    "url": "https://github.com/blu3r4y/air-datepicker.d.ts/issues"
   },
-  "homepage": "https://github.com/nicovil/air-datepicker.d.ts#readme"
+  "homepage": "https://github.com/blu3r4y/air-datepicker.d.ts#readme"
 }
