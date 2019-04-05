@@ -2,7 +2,7 @@ declare interface AirDatepickerOptions
 {
     classes?: string;
     inline?: boolean;
-    language?: string;
+    language?: string | AirDatepickerLanguageInstance;
     startDate?: Date;
     firstDay?: number;
     weekends?: number[];
@@ -57,6 +57,20 @@ declare interface AirDatepickerEventObject extends JQueryEventObject
 {
     date: Date;
     format(format?: string): string;
+}
+
+declare interface AirDatepickerLanguageInstance
+{
+    days: string[],
+    daysShort: string[],
+    daysMin: string[],
+    months: string[],
+    monthsShort: string[],
+    today: string,
+    clear: string
+    dateFormat: string,
+    timeFormat: string,
+    firstDay: number
 }
 
 declare interface AirDatepickerInstance
