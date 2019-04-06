@@ -75,7 +75,7 @@ declare interface AirDatepickerLanguageInstance
 
 declare interface AirDatepickerInstance
 {
-    currentDate: Date;
+    selectedDates: Date[];
     show(): AirDatepickerInstance;
     hide(): AirDatepickerInstance;
     next(): AirDatepickerInstance;
